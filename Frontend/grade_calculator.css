@@ -1,0 +1,121 @@
+body 
+{
+    /*Set the background image of the website to an image of a calculator*/
+    background-image: url('https://t3.ftcdn.net/jpg/02/06/14/56/360_F_206145642_ch7d799Dq38xZfRQjEAYRLaYS9jsmezF.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: center;
+}
+#title /*Customize the title of the website*/
+{
+    color: rgb(45, 194, 82);
+    font: Roboto Mono;
+    font-size: 70px;
+    margin-left: 500px; /*Offsets the title text to be toward the right side of the screen*/
+    font-style: italic;
+}
+#calculator_div /*Allows the submit button to always appear below the two forms no matter the amount of input*/
+{
+    display: flex;
+    flex-direction: column; 
+}
+#weight_form_div /*Offset the weight form div from the left of the screen and float it with the assignment form*/
+{
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+#assignment_form_div /*Offset the assignment form div from the weight form div and put it next to the weight form*/
+{
+    margin-left: 120px;
+    margin-bottom: 20px;
+    float: left;
+}
+#weight_form 
+{
+    margin-left: 20px; /*Offset the weight form from the left side of the screen*/
+}
+/*
+    Following is used for both the 
+    weight form and the assignment
+    form to customize the label
+    associated with both
+*/
+.weight_form_label 
+{
+    color: rgb(213, 255, 249);
+    margin-bottom: 70px;
+    margin-left: 15px;
+    font-size: 20px;
+    font: Times New Roman;
+}
+.assignment_form_label
+{
+    color: rgb(213, 255, 249);
+    margin-bottom: 70px;
+    margin-left: 120px;
+    font-size: 20px;
+    font: Times New Roman;
+}
+/*
+    Following is used for the left textfield
+    of both forms for their style properties
+*/
+.left_textfield
+{
+    border-color: white;
+    border-width: 5px;
+}
+/*
+    Following is used for the right textfield
+    of both forms for their style properties
+*/
+.right_textfield
+{
+    margin-left: 10px;
+    border-color: white;
+    border-width: 5px;
+}
+#weight_input /*Need to offset this by a little bit*/
+{
+    margin-left: 6px;
+}
+/*
+    All add buttons follow these properties
+*/
+.addButton
+{  
+    margin-left: 5px;
+    color: black;
+    background-color: lime;
+}
+#firstAddButton /*Need to offset this a little bit*/
+{
+    margin-left: 0px;
+}
+#add_for_assignments /*Also need to offset this a little bit*/
+{
+    margin-left: 0px;
+}
+/*
+    All remove buttons follow these properties
+*/
+.removeButton
+{
+    margin-left: 5px;
+    color: black;
+    background-color: red;
+}
+#submit_button /*This is style options for the submit button*/
+{
+    width: 250px;
+    height: 100px;
+    font: Comfortaa;
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+    background-color: rgb(255, 0, 204);
+    border-width: 10px;
+    border-color: purple;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--Here is where the HTML for the main page starts-->
+<html> 
+    <!--Header Section-->
+    <head>
+        <!--The title of the website (which appears in the web page)-->
+        <title>Grade Calculator</title>
+        <!--Link the associated CSS file to this file-->
+        <link rel="stylesheet" href="grade_calculator.css">
+    </head>
+    <!--Body Section, the main content of the Grade Calculator website-->
+    <body>
+        <!--Title of the page-->
+        <h1 id = "title">Grade Calculator</h1>
+        <!--This div is used as a container for the forms + submit button-->
+        <div id = "calculator_div">
+            <!--This div is used as a container for both forms-->
+            <div id = "form_div">
+                <!--Form which asks to input both assignment categories and weights for those categories-->
+                <div id = "weight_form_div"><form id = "weight_form">
+                    <!--This specific div separates this row from other rows-->
+                    <div class = "weight_form_row">
+                        <!--Label for the categories/weights text box insertion form-->
+                        <label class = "weight_form_label">Insert categories and associated weights below<br>
+                        <!--Input field for categories-->
+                        <input type = "text" id = "category_input_for_weights" class = "left_textfield" 
+                        name = "category_input" placeholder = "Insert category." size = "30">
+                        <!--Input field for weights-->
+                        <input type = "text" id = "weight_input" name = "weight_input" class = "right_textfield" 
+                        placeholder = "Insert weight." size = "15">
+                        <!--Button for adding categories (will always add a new text field to the bottom)-->
+                        <button onclick = "addInputToWeightForm()" type = "button" 
+                        class = "addButton" id = "add_for_weights">Add</button>
+                        <!--Note: Remove button will be added for all inputs after the 1st one-->
+                    </div>
+                </form></div>
+                <div id = "assignment_form_div"><form id = "assignment_form">
+                    <!--This specific div separates this row from other rows-->
+                    <div class = "assignment_form_row">
+                        <!--Label for the assignments/categories text box insertion form-->
+                        <label class = "assignment_form_label">Insert assignments and associated categories below<br>
+                        <!--Input field for assignments-->
+                        <input type = "text" id = "assignment_input" name = "assignment_input" 
+                        class = "left_textfield" placeholder = "Insert assignment." size = "40">
+                        <!--Input field for categories-->
+                        <input type = "text" id = "category_input_for_assignments" name = "weight_input" 
+                        class = "right_textfield" placeholder = "Insert category." size = "30">
+                        <!--Input field for grade-->
+                        <input type = "text" id = "grade_input" name = "grade_input" 
+                        class = "right_textfield" placeholder = "Insert grade." size = "15">
+                        <!--Button for adding assignments (will always add a new text field to the bottom-->
+                        <button onclick = "addInputToAssignmentForm()" type = "button" 
+                        class = "addButton" id = "add_for_assignments">Add</button>
+                        <!--Note: Remove button will be added for all inputs after the 1st one-->
+                    </div>
+                </form></div>
+            </div>
+        <!--The following is the submit button that will trigger the Java backend for the Grade Calculator-->
+        <center><button onclick = "calculateGrade()" type = "button" id = "submit_button">SUBMIT</button></center>
+        </div>
+        <!--Link the associated JavaScript file to this file-->
+        <script src="grade_calculator.js"></script>
+    </body>
+</html>
